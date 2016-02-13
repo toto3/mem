@@ -1,0 +1,62 @@
+
+>sudo chown pascal /dev/ttyACM0
+sudo arduino
+
+
+
+>sudo usermod -a -G tty pascal
+
+
+
+
+xammp
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/manager-linux-x64.run
+
+
+wine:
+.wine/drive_c/Program Files (x86)/
+Antidote:LXM-WJN-NPP-NAV-H40
+Photoshop (s'installe et fonctionne mais une seule fois quand wine est frais)
+Korg Kontrol editor: /home/pascal/.wine/drive_c/Program Files (x86)/KORG/KORG KONTROL Editor
+
+Processing:
+installation: http://tutorialforlinux.com/2014/04/23/how-to-install-processing-2-on-ubuntu-14-04-trusty-3264bit-linux-step-by-step-guide/
+télécharcher et dézipper dans /tmp
+sudo su -c "chown -R root:root /tmp/processing*"
+sudo su -c "mv /tmp/processing* /opt/processing"
+Add Processing to Ubuntu Path
+sudo su -c "ln -s /opt/processing/processing /usr/local/bin/processing"
+
+
+
+
+MUSESCORE:
+This repository contains the latest stable release of the MuseScore package for Ubuntu. Releases of Ubuntu older than 14.04 may not be up to date. Please upgrade!
+To install the latest MuseScore, run these commands from a terminal:
+sudo add-apt-repository ppa:mscore-ubuntu/mscore-stable
+sudo apt-get update
+sudo apt-get install musescore
+
+
+pd_extended:Installation
+ sudo add-apt-repository "deb http://apt.puredata.info/releases `lsb_release -c | awk '{print $2}'` main"
+ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 9f0fe587374bbe81
+ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key D63D3D09C39F5EEB
+ sudo apt-get update
+ sudo apt-get install pd-extended
+
+
+
+
+commande Pour arduino et PD
+permet d'utiliser les port avec Arduino
+>sudo usermod -a -G tty pascal
+>sudo chown username /dev/ttyACM0
+posrt série /dev/ttyACM0
+
+Pure data:
+/dev/ttyUSB0  = device 32 , donc Open 32
+
+
+
