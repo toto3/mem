@@ -1,0 +1,17 @@
+commandes de base:
+echo "# nom projet" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/toto3/nomprojet.git
+git push -u origin master
+
+git pull <remote> <branch>
+git pull  origin    master
+
+git clone https://.../nomprojet.git. nomdurepertoire   #pour spécifier un nom de rep a crééer un rep
+git clone https://.../nomprojet.git                    #utilise nomprojet comme nom de répertore a créer
+
+git remote -v #info sur le nom du remote
+git config --list  #pour affichier tous le global
+
