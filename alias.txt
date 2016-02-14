@@ -1,0 +1,12 @@
+mac OS: $HOME/.bash_profile
+
+
+alias cd.='cd $OLDPWD'
+alias doc='cd $HOME/Documents ; ll'
+alias h='history'
+alias home='cd $HOME ; ll'
+alias ll='ls -alhFG'
+alias mem='cd $HOME/Documents/mem ; ll'
+alias usb='cd /Volumes/volume9 ; ll'
+alias web='cd /Applications/MAMP/htdocs ; ll '
+
