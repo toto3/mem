@@ -6,6 +6,8 @@ sudo arduino
 
 >sudo usermod -a -G tty pascal
 
+commande pour mettre en veille:
+dbus-send --print-reply --system --dest=org.freedesktop.UPower /org/freedesktop/UPowerorg.freedesktop.UPower.Suspend
 
 
 
